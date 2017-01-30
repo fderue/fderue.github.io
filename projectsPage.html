@@ -28,9 +28,13 @@
 
 	<body>
 		<div class="container">
+			<!-- ====================Navigation Bar ========================== -->
+
 			<div class="row">
 				<div class="col-md-6"> 
-					<h1 id="titleText"> François-Xavier Derue</h1>
+					<a id="titleText" href="./index.html">
+						<h1 >François-Xavier Derue</h1>
+					</a>
 				</div>
 				<div class="col-md-6">
 					<!--p>This is for navigation bar</p-->
@@ -54,11 +58,54 @@
 			</div>
 			<hr />
 
+			<!-- ===================  Content ================================ -->
+			<div class="row">
+				<div class="col-md-4">
+					<a href="./Projects/spikes.html">
+						<div class="polaroid">
+							<img class="imgBoxShadow" src="./images/spikesTrack.png" >
+							<div class="textBox">
+								<h3> SPIKES </h3>
+								<p> Model-free tracker based on superpixels and keypoints.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="./Projects/slicCuda.html">
+						<div class="polaroid">
+							<img class="imgBoxShadow" src="./images/carWithSlic.jpg" >
+							<div class="textBox">
+								<h3> SLIC CUDA </h3>
+								<p> GPU implementation of the SLIC Superpixel segmentation with CUDA.</p>
+							</div>
+						</div>	
+					</a>		
+				</div>
+				<div class="col-md-4">
+					<div class="polaroid">
+						<img class="imgBoxShadow" src="http://docs.opencv.org/trunk/superpixels_slic.png" >
+						<div class="textBox">
+							<h3> Saliency Detection  </h3>
+							<p> Implementation of Detection of salient region via High-dimensional color transform </p>
+						</div>
+					</div>					
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="./Projects/ICA.html">
+						<div class="polaroid">
+							<img class="imgBoxShadow" src="./images/icaWaveMix.png" >
+							<div class="textBox">
+								<h3> Cocktail Party </h3>
+								<p> Audio signal unmixing via Independent Component Analysis (ICA).</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+			</div>	
+		</div> <!--end of container -->
 	</body>
-
-
-
-
-
 
 </html>

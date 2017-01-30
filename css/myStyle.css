@@ -14,14 +14,14 @@ body {
   font-weight: bold;
 }
 
-#whiteRect{
-  width: 100%;
-  height: 300px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 
+a:hover{
+  text-decoration: none;
+  color: inherit;
 }
-#blueRect{
+
+
+.projectRect{
   /*max-width: 100%;*/
   width:100%;
   height:250px;
@@ -29,6 +29,15 @@ body {
   margin-bottom: 10px;
   background-color:#000000;
   filter: brightness(60%);
+  /*opacity: 1.5;*/
+}
+
+.boxAndText:hover .projectRect{
+  filter: brightness(50%); 
+}
+
+.boxAndText:hover .thumbnailText{
+  color: #f4ad42;
 }
 /*Navigation bar style*/
 
@@ -46,7 +55,7 @@ body {
   text-align: center;
 }
 .cvButtonText{
-color: #f4ad42;
+color: #FFFFFF;
 position: absolute;
 top: 50%;
 left: 0;
@@ -62,7 +71,7 @@ z-index: 2;
 }
 
 .thumbnailText{
-color: #f4ad42;
+color: #FFFFFF;
 position: absolute;
 top: 50%;
 left: 0;
@@ -79,8 +88,9 @@ transform: translateY(-50%);
 z-index: 2;
 }
 
+
 #descText{
-color: #1c5563;
+color: #0;
 font-size: 20px;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-style:italic; 
@@ -95,6 +105,80 @@ font-style:italic;
 div[class^="col-"] {
     background-color: rgba(255, 0, 0, 0.2);
 }*/
+
+/*--------------------- Project page ---------------------------------*/
+
+
+div.polaroid {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+margin-bottom: 10px;
+margin-top: 10px;
+
+
+}
+
+div.textBox {
+  /*padding: 10px;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+img.imgBoxShadow{
+  width: 100%;
+  height:250px;
+}
+
+
+
+iframe.vFraming{
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.projDescription{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+
+div.imageTextBottom{
+  width:100%;
+  text-align: center;
+  margin-bottom: 20 px;
+}
+
+
+/*----------------- ICA sound ---------------------*/
+#mixHillaryTrump0{
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -30px;
+}
+
+#mixHillaryTrump1{
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -370px;
+}
+
+#hillaryVoice{
+  position: absolute;
+  margin-left: 825px;
+  margin-top: -370px;
+}
+#trumpVoice{
+  position: absolute;
+  margin-left: 825px;
+  margin-top: -30px;
+}
+/*  ------------------------ Navigation bar ----------------------- */
+
+
 
 .navbar-default{
   width:85%

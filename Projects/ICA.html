@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <!--link rel="icon" href="../../favicon.ico"-->
+
+	    <title>Derue FX Blog</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <!--link href="./css/bootstrap.min.css" rel="stylesheet"-->
+
+	    <link href="../css/bootstrap.css" rel="stylesheet">
+
+	    <link href="../css/myStyle.css" rel="stylesheet">
+
+	    <!--link href="./css/bootstrap-theme.css" rel="stylesheet">
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <!--link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet"-->
+
+	    <!-- Custom styles for this template -->
+	    <!--link href="starter-template.css" rel="stylesheet"-->
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- ====================Navigation Bar ========================== -->
+
+			<div class="row">
+				<div class="col-md-6"> 
+					<a id="titleText" href="./index.html">
+						<h1 >François-Xavier Derue</h1>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<!--p>This is for navigation bar</p-->
+					<nav class="navbar navbar-default navbar-right ">
+				      <div class="container">
+				        <!--div class="navbar-header">
+				          <!--a class="nav navbar-nav" href="./index.html">Home</a>
+				        </div-->
+				        <div id="navbar" class="collapse navbar-collapse">
+				          <ul class="nav navbar-nav">
+				          	<li><a href="../index.html">Home</a></li>
+				            <li class = "active"><a href="../projectsPage.html">Projects</a></li>
+				            <li><a href="../photographyPage.html">Photography</a></li>
+				            <li><a href="../cinemagraphPage.html">Cinemagraph</a></li>
+				            <li><a href="../videoPage.html">Video</a></li>
+				          </ul>
+				        </div>
+				      </div>
+				    </nav>
+				</div>
+			</div>
+			<hr />
+
+			<!-- ===================  Content ================================ -->
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="projDescription">
+						<h3>The Cocktail Party</h3>
+						<br />
+						 <p><u>Description</u> : The problem here is to unmix audio signals provided by different sources in order to retrieve each single signal separately.
+						<br />
+						For that purpose, I implemented ICA (<i>Independent Component Analysis</i>, Hyvarinen et al., 2001). You can try the example beyond to see the results. 
+						<br />
+						The voice of H. Clinton and D. Trump have been mixed with different coefficients to simulate the sources. Given these mixed signals, ICA is able to split them into two single signals corresponding to each voice.
+						</p>
+						<p><u>Context</u> : Project for the course Digital Audio INF8703 at Polytechnique Montreal.</p>
+						<p><u>Tools</u> : C++, OpenCV and libsnd. </p>
+						<p><u>Source code</u> : <a href="https://github.com/fderue/ICA">https://github.com/fderue/ICA</a></p>
+
+
+					</div>
+					<br />
+				</div>
+				<div class="col-md-12">
+					<div class="imageTextBottom">
+						<img src="../images/icaDiag.png">
+						<div id="mixHillaryTrump0">
+							<audio controls>
+					 		<source src="../sounds/mixHillaryTrump0.wav" type="audio/wav">
+							</audio>
+						</div>
+						<div id="mixHillaryTrump1">
+							<audio controls>
+					 		<source src="../sounds/mixHillaryTrump1.wav" type="audio/wav">
+							</audio>
+						</div>
+						<div id="hillaryVoice">
+							<audio controls>
+					 		<source src="../sounds/hillaryVoice.wav" type="audio/wav">
+							</audio>
+						</div>
+						<div id="trumpVoice">
+							<audio controls>
+					 		<source src="../sounds/trumpVoice.wav" type="audio/wav">
+							</audio>
+						</div>						
+					</div>
+				
+
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+	</body>
+
+
+
+
+
+
+</html>
