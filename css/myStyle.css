@@ -149,9 +149,20 @@ iframe.vFraming{
 div.imageTextBottom{
   width:100%;
   text-align: center;
-  margin-bottom: 20 px;
+  margin-bottom: 50 px;
 }
 
+
+.captionVideoSide{
+  margin-top: 10px;
+}
+
+
+img.spikesImage{
+  width:150px;
+  height:200px;
+  margin-bottom: 20px;
+}
 
 /*----------------- ICA sound ---------------------*/
 #mixHillaryTrump0{
