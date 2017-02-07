@@ -187,6 +187,33 @@ img.spikesImage{
   margin-left: 825px;
   margin-top: -30px;
 }
+
+
+
+
+
+/*--------------- PHOTOGRAPHY ---------------------------*/
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           5px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+  
+}
+
 /*  ------------------------ Navigation bar ----------------------- */
 
 
