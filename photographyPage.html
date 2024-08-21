@@ -1,132 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	    <meta name="description" content="">
-	    <meta name="author" content="">
-	    <!--link rel="icon" href="../../favicon.ico"-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DFX Portfolio</title>
 
-	    <title>Derue FX Blog</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/myStyle.css" rel="stylesheet" />
 
-	    <!-- Bootstrap core CSS -->
-	    <!--link href="./css/bootstrap.min.css" rel="stylesheet"-->
+    <!-- Add jQuery library -->
+    <script
+      type="text/javascript"
+      src="fancyBox/lib/jquery-1.10.2.min.js"
+    ></script>
 
-	    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script
+      type="text/javascript"
+      src="fancyBox/lib/jquery.mousewheel.pack.js?v=3.1.3"
+    ></script>
 
-	    <link href="./css/myStyle.css" rel="stylesheet">
+    <!-- Add fancyBox main JS and CSS files -->
+    <script
+      type="text/javascript"
+      src="fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fancyBox/source/jquery.fancybox.css?v=2.1.5"
+      media="screen"
+    />
 
-	    <!--link href="./css/bootstrap-theme.css" rel="stylesheet">
-	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	    <!--link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet"-->
+    <!-- Add Button helper (this is optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5"
+    />
+    <script
+      type="text/javascript"
+      src="fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"
+    ></script>
 
-	    <!-- Custom styles for this template -->
-	    <!--link href="starter-template.css" rel="stylesheet"-->
+    <!-- Add Media helper (this is optional) -->
+    <script
+      type="text/javascript"
+      src="fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"
+    ></script>
 
+    <script type="text/javascript" src="fancyBox/lib/slideshow.js"></script>
+  </head>
 
-		<!-- Add jQuery library -->
-		<script type="text/javascript" src="fancyBox/lib/jquery-1.10.2.min.js"></script>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a id="title-main" href="./index.html">
+            <h1>François-Xavier Derue</h1>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <!--p>This is for navigation bar</p-->
+          <nav class="navbar navbar-default navbar-right">
+            <div class="container">
+              <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./projectsPage.html">Projects</a></li>
+                  <li class="active">
+                    <a href="./photographyPage.html">Photography</a>
+                  </li>
+                  <li><a href="./cinemagraphPage.html">Cinemagraph</a></li>
+                  <li><a href="./videoPage.html">Video</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <hr />
 
-		<!-- Add mousewheel plugin (this is optional) -->
-		<script type="text/javascript" src="fancyBox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="photos">
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8556/29503175075_c171e41180_b.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8556/29503175075_c171e41180_b.jpg"
+                alt="treeOnGrandCanyon"
+            /></a>
 
-		<!-- Add fancyBox main JS and CSS files -->
-		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-		<link rel="stylesheet" type="text/css" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8028/29423044441_7a11e28cf3_k.jpg"
+              ><img
+                src="https:////c1.staticflickr.com/9/8069/29394628082_0a7d9b0169_k.jpg"
+                alt="GrandCanyon"
+            /></a>
 
-		<!-- Add Button helper (this is optional) -->
-		<link rel="stylesheet" type="text/css" href="fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
-		<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8028/29423044441_7a11e28cf3_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8028/29423044441_7a11e28cf3_k.jpg"
+                alt="gaspeLakeReflect"
+            /></a>
 
-			<!-- Add Media helper (this is optional) -->
-		<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8379/29214050240_76db2a445c_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8379/29214050240_76db2a445c_k.jpg"
+                alt="gaspeCabane"
+            /></a>
 
-		<script type="text/javascript" src="fancyBox/lib/slideshow.js"></script>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8478/29423043211_a7d7d89360_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8478/29423043211_a7d7d89360_k.jpg"
+                alt="gaspeBeach"
+            /></a>
 
-		
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/1/382/31532073614_dd6441e648_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/1/382/31532073614_dd6441e648_k.jpg"
+                alt="montrealNight"
+            /></a>
 
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8319/29423045291_687f0a3658_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8319/29423045291_687f0a3658_k.jpg"
+                alt="treeWithSunRay"
+            /></a>
 
-	</head>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8707/29214062230_9169f20ac7_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8707/29214062230_9169f20ac7_k.jpg"
+                alt="rockOnRiver"
+            /></a>
 
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6"> 
-					<a id="titleText" href="./index.html">
-						<h1 >François-Xavier Derue</h1>
-					</a>
-				</div>
-				<div class="col-md-6">
-					<!--p>This is for navigation bar</p-->
-					<nav class="navbar navbar-default navbar-right ">
-				      <div class="container">
-				        <!--div class="navbar-header">
-				          <!--a class="nav navbar-nav" href="./index.html">Home</a>
-				        </div-->
-				        <div id="navbar" class="collapse navbar-collapse">
-				          <ul class="nav navbar-nav">
-				          	<li><a href="./index.html">Home</a></li>
-				            <li><a href="./projectsPage.html">Projects</a></li>
-				            <li class = "active"><a  href="./photographyPage.html">Photography</a></li>
-				            <li><a href="./cinemagraphPage.html">Cinemagraph</a></li>
-				            <li><a href="./videoPage.html">Video</a></li>
-				          </ul>
-				        </div>
-				      </div>
-				    </nav>
-				</div>
-			</div>
-			<hr />
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8550/29394623592_5b77c81e1a_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8550/29394623592_5b77c81e1a_k.jpg"
+                alt="cascade"
+            /></a>
 
-			<div class="row">
-				<div class="col-md-12">
-					<div id="photos">
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8028/28878254764_e952b0388a_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8028/28878254764_e952b0388a_k.jpg"
+                alt="fromRockefeller"
+            /></a>
 
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8556/29503175075_c171e41180_b.jpg"><img src="https://c1.staticflickr.com/9/8556/29503175075_c171e41180_b.jpg" alt="treeOnGrandCanyon"></a>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8850/29423091091_449e869647_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8850/29423091091_449e869647_k.jpg"
+                alt="newyorkBuilding"
+            /></a>
 
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8028/29423044441_7a11e28cf3_k.jpg"><img src="https:////c1.staticflickr.com/9/8069/29394628082_0a7d9b0169_k.jpg" alt="GrandCanyon"></a>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8234/29396263822_9b7cf1e320_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8234/29396263822_9b7cf1e320_k.jpg"
+                alt="bikeFast"
+            /></a>
 
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8028/29423044441_7a11e28cf3_k.jpg"><img src="https://c1.staticflickr.com/9/8028/29423044441_7a11e28cf3_k.jpg" alt="gaspeLakeReflect"></a>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8438/29504799075_b1de974790_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8438/29504799075_b1de974790_k.jpg"
+                alt="skiJumpFast"
+            /></a>
 
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/9/8531/29396293212_c9fed57b0e_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/9/8531/29396293212_c9fed57b0e_k.jpg"
+                alt="snowboard"
+            /></a>
 
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/1/456/31957884643_bf85d37f2f_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/1/456/31957884643_bf85d37f2f_k.jpg"
+                alt="dog"
+            /></a>
 
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8379/29214050240_76db2a445c_k.jpg"><img src="https://c1.staticflickr.com/9/8379/29214050240_76db2a445c_k.jpg" alt="gaspeCabane"></a>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://c1.staticflickr.com/1/316/32754181056_b8f1ca3d0e_k.jpg"
+              ><img
+                src="https://c1.staticflickr.com/1/316/32754181056_b8f1ca3d0e_k.jpg"
+                alt="glassReflection"
+            /></a>
 
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8478/29423043211_a7d7d89360_k.jpg"><img src="https://c1.staticflickr.com/9/8478/29423043211_a7d7d89360_k.jpg" alt="gaspeBeach"></a>
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://farm5.staticflickr.com/4352/37247622126_8a44b3dc7a_z.jpg"
+              ><img
+                src="https://farm5.staticflickr.com/4352/37247622126_8a44b3dc7a_z.jpg"
+                alt="churchGray"
+            /></a>
 
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/1/382/31532073614_dd6441e648_k.jpg"><img src="https://c1.staticflickr.com/1/382/31532073614_dd6441e648_k.jpg" alt="montrealNight"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8319/29423045291_687f0a3658_k.jpg"><img src="https://c1.staticflickr.com/9/8319/29423045291_687f0a3658_k.jpg" alt="treeWithSunRay"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8707/29214062230_9169f20ac7_k.jpg"><img src="https://c1.staticflickr.com/9/8707/29214062230_9169f20ac7_k.jpg" alt="rockOnRiver"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8550/29394623592_5b77c81e1a_k.jpg"><img src="https://c1.staticflickr.com/9/8550/29394623592_5b77c81e1a_k.jpg" alt="cascade"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8028/28878254764_e952b0388a_k.jpg"><img src="https://c1.staticflickr.com/9/8028/28878254764_e952b0388a_k.jpg" alt="fromRockefeller"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8850/29423091091_449e869647_k.jpg"><img src="https://c1.staticflickr.com/9/8850/29423091091_449e869647_k.jpg" alt="newyorkBuilding"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8234/29396263822_9b7cf1e320_k.jpg"><img src="https://c1.staticflickr.com/9/8234/29396263822_9b7cf1e320_k.jpg" alt="bikeFast"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8438/29504799075_b1de974790_k.jpg"><img src="https://c1.staticflickr.com/9/8438/29504799075_b1de974790_k.jpg" alt="skiJumpFast"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/9/8531/29396293212_c9fed57b0e_k.jpg"><img src="https://c1.staticflickr.com/9/8531/29396293212_c9fed57b0e_k.jpg" alt="snowboard"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/1/456/31957884643_bf85d37f2f_k.jpg"><img src="https://c1.staticflickr.com/1/456/31957884643_bf85d37f2f_k.jpg" alt="dog"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://c1.staticflickr.com/1/316/32754181056_b8f1ca3d0e_k.jpg"><img src="https://c1.staticflickr.com/1/316/32754181056_b8f1ca3d0e_k.jpg" alt="glassReflection"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://farm5.staticflickr.com/4352/37247622126_8a44b3dc7a_z.jpg"><img src="https://farm5.staticflickr.com/4352/37247622126_8a44b3dc7a_z.jpg" alt="churchGray"></a>
-
-						<a class="fancybox-buttons" data-fancybox-group="button" href="https://farm5.staticflickr.com/4381/36584391564_9e67f6d8fc_z.jpg"><img src="https://farm5.staticflickr.com/4381/36584391564_9e67f6d8fc_z.jpg" alt="preportGray"></a>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</body>
-
+            <a
+              class="fancybox-buttons"
+              data-fancybox-group="button"
+              href="https://farm5.staticflickr.com/4381/36584391564_9e67f6d8fc_z.jpg"
+              ><img
+                src="https://farm5.staticflickr.com/4381/36584391564_9e67f6d8fc_z.jpg"
+                alt="preportGray"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
