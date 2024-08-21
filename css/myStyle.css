@@ -5,13 +5,10 @@ body {
   padding-top: 50px;
 }
 
-.active {
-  font-weight: bold;
-}
-
 #title-main {
   color: #1c5563;
   font-weight: bold;
+  font-size: xx-large;
 }
 
 a:hover {
@@ -39,12 +36,11 @@ a:hover {
 .row-elem:hover .thumbnail-text {
   color: #f4ad42;
 }
-/*Navigation bar style*/
 
+/*Navigation bar style*/
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
-  /*padding-left: 1000px*/
 }
 
 .cvButton {
@@ -65,9 +61,14 @@ a:hover {
   z-index: 2;
 }
 
-#emailText {
-  margin-top: 10px;
+#contact-link a{
+  color: #1c5563;
 }
+
+#contact-link a:hover{
+  color: #f4ad42;
+}
+
 
 .row-elem .thumbnail-text {
   color: #ffffff;
@@ -195,72 +196,16 @@ iframe.videoStyle {
 
 /*  ------------------------ Navigation bar ----------------------- */
 
-.navbar-default {
-  width: 85%;
+.navbar-nav .nav-link.active{
+  color: #f4ad42;
+  font-weight: bold;
 }
 
-.navbar-default .navbar-brand {
-  color: #1c5563;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #1c5563;
-}
-.navbar-default .navbar-text {
-  color: #1c5563;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #1c5563;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #f4ad42;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #f4ad42;
-  background-color: #ffffff;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #f4ad42;
-  background-color: #ffffff;
-}
-.navbar-default .navbar-toggle {
-  border-color: #ffffff;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #1c5563;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #1c5563;
-}
-.navbar-default .navbar-link {
-  color: #1c5563;
-}
-.navbar-default .navbar-link:hover {
+.nav-link:hover{
   color: #f4ad42;
 }
 
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #1c5563;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #1c5563;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #1c5563;
-    background-color: #ffffff;
-  }
+.nav-link{
+  color: #1c5563;
 }
+
