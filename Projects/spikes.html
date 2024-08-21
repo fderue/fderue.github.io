@@ -1,143 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	    <meta name="description" content="">
-	    <meta name="author" content="">
-	    <!--link rel="icon" href="../../favicon.ico"-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DFX Portfolio</title>
 
-	    <title>Derue FX Blog</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/myStyle.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
+  </head>
 
-	    <!-- Bootstrap core CSS -->
-	    <!--link href="./css/bootstrap.min.css" rel="stylesheet"-->
+  <body>
+    <div class="container">
+      <div id="navbar-placeholder"></div>
+      <hr />
 
-	    <link href="../css/bootstrap.css" rel="stylesheet">
+      <!-- ===================  Content ================================ -->
 
-	    <link href="../css/myStyle.css" rel="stylesheet">
-
-	    <!--link href="./css/bootstrap-theme.css" rel="stylesheet">
-	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	    <!--link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet"-->
-
-	    <!-- Custom styles for this template -->
-	    <!--link href="starter-template.css" rel="stylesheet"-->
-	</head>
-
-	<body>
-		<div class="container">
-			<!-- ====================Navigation Bar ========================== -->
-
-			<div class="row">
-				<div class="col-md-6"> 
-					<a id="titleText" href="../index.html">
-						<h1 >François-Xavier Derue</h1>
-					</a>
-				</div>
-				<div class="col-md-6">
-					<!--p>This is for navigation bar</p-->
-					<nav class="navbar navbar-default navbar-right ">
-				      <div class="container">
-				        <!--div class="navbar-header">
-				          <!--a class="nav navbar-nav" href="./index.html">Home</a>
-				        </div-->
-				        <div id="navbar" class="collapse navbar-collapse">
-				          <ul class="nav navbar-nav">
-				          	<li><a href="../index.html">Home</a></li>
-				            <li class = "active"><a href="../projectsPage.html">Projects</a></li>
-				            <li><a href="../photographyPage.html">Photography</a></li>
-				            <li><a href="../cinemagraphPage.html">Cinemagraph</a></li>
-				            <li><a href="../videoPage.html">Video</a></li>
-				          </ul>
-				        </div>
-				      </div>
-				    </nav>
-				</div>
-			</div>
-			<hr />
-
-			<!-- ===================  Content ================================ -->
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="projDescription">
-						<h3>SPiKeS-T</h3>
-						<br />
-						 <p><u>Description</u> : SPiKeS-T (<i>SuperPixel-Keypoints Structure Tracker</i>) is a model-free tracker I developed during my master of research. In a video, the target to follow is only defined by a bounding box in the first frame. The goal is to track that target in each frame of the video. The method I proposed is based on superpixels, keypoints and voting strategy. A paper is currently in review but it can already be downloaded <a href="https://arxiv.org/pdf/1610.07238v1.pdf">here</a>.
-						</p>
-						<p><u>Context</u> : Master's project at Polytechnique Montreal.</p>
-						<p><u>Tools</u> : C++, OpenCV and CUDA.</p>
-						<p><u>Source code</u> : <a href="https://github.com/fderue/SPIKES">https://github.com/fderue/SPIKES</a></p>
-
-					</div>
-				</div>
-			</div>
-			<br />
-			<div class="row">
-				<div class="col-md-4">
-					<div >
-						<img class="spikesImage center-block" src="https://www.dropbox.com/s/eubw2ptyvlj8ic8/spikes.PNG?raw=1" align="middle" >
-					</div>
-
-				</div>
-				<div class="col-md-4">
-					<div class="captionVideoSide">
-						<h3>Spikes</h3>
-						<p>The target is represented by a Spikes-based model. A Spikes is a modified superpixel linked with surrounding keypoints to result in a structure easy to match.
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-9">
-						<video width="800" controls>
-							<source src="https://www.dropbox.com/s/53igknmjuujpbyv/matching.mp4?raw=1" type="video/mp4">
-						</video>
-				</div>
-				<div class="col-md-3">
-					<div class="captionVideoSide">
-						<h3>Matches</h3>
-						<p>Each spikes of the model looks for a match in the current frame. This video shows consistent matches as the red lines are parallel.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<video controls>
-						<source src="https://www.dropbox.com/s/oroviet7sdjiio4/occTrack.mp4?raw=1" type="video/mp4">
-					</video>
-				</div>
-				<div class="col-md-4">
-					<div class="captionVideoSide">
-						<h3>Votes</h3>
-						Each spikes votes for the target's center location. As each spikes is independent, even if some of them are hidden, the other ones can still vote to locate the target.
-					</div>
-				</div>
-				<div class="col-md-4">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-9">
-					<video width="800" controls>
-						<source src="https://www.dropbox.com/s/7vjj4j8n4tdp9yf/compoTrackingWithSpikes.mp4?raw=1" type="video/mp4">
-					</video>
-				</div>
-				<div class="col-md-3">
-					<div class="captionVideoSide">
-							<h3>Tracking Results</h3>
-							Our tracker is able to handle deformable and occluded objects.
-					</div>
-				</div>
-			</div>			
-
-
-		</div>
-	</body>
-
-
-
-
-
-
+      <div class="row">
+        <div class="col-md-12">
+          <div class="projDescription">
+            <h3>SPiKeS-T</h3>
+            <br />
+            <p>
+              <u>Description</u> : SPiKeS-T (<i
+                >SuperPixel-Keypoints Structure Tracker</i
+              >) is a model-free tracker I developed during my master of
+              research. In a video, the target to follow is only defined by a
+              bounding box in the first frame. The goal is to track that target
+              in each frame of the video. The method I proposed is based on
+              superpixels, keypoints and voting strategy. A paper is currently
+              in review but it can already be downloaded
+              <a href="https://arxiv.org/pdf/1610.07238v1.pdf">here</a>.
+            </p>
+            <p><u>Context</u> : Master's project at Polytechnique Montreal.</p>
+            <p><u>Tools</u> : C++, OpenCV and CUDA.</p>
+            <p>
+              <u>Source code</u> :
+              <a href="https://github.com/fderue/SPIKES"
+                >https://github.com/fderue/SPIKES</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <img
+              class="spikesImage center-block"
+              src="https://www.dropbox.com/s/eubw2ptyvlj8ic8/spikes.PNG?raw=1"
+              align="middle"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="captionVideoSide">
+            <h3>Spikes</h3>
+            <p>
+              The target is represented by a Spikes-based model. A Spikes is a
+              modified superpixel linked with surrounding keypoints to result in
+              a structure easy to match.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <video width="800" controls>
+            <source
+              src="https://www.dropbox.com/s/53igknmjuujpbyv/matching.mp4?raw=1"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="col-md-3">
+          <div class="captionVideoSide">
+            <h3>Matches</h3>
+            <p>
+              Each spikes of the model looks for a match in the current frame.
+              This video shows consistent matches as the red lines are parallel.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <video controls>
+            <source
+              src="https://www.dropbox.com/s/oroviet7sdjiio4/occTrack.mp4?raw=1"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="col-md-4">
+          <div class="captionVideoSide">
+            <h3>Votes</h3>
+            Each spikes votes for the target's center location. As each spikes
+            is independent, even if some of them are hidden, the other ones can
+            still vote to locate the target.
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <video width="800" controls>
+            <source
+              src="https://www.dropbox.com/s/7vjj4j8n4tdp9yf/compoTrackingWithSpikes.mp4?raw=1"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="col-md-3">
+          <div class="captionVideoSide">
+            <h3>Tracking Results</h3>
+            Our tracker is able to handle deformable and occluded objects.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
