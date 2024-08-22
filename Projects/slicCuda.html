@@ -11,6 +11,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link href="../css/myStyle.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar.js"></script>
@@ -24,60 +28,70 @@
       <!-- ===================  Content ================================ -->
       <div class="row">
         <div class="col-md-4">
-          <div class="imageTextBottom">
-            <img src="../images/car1080p.jpg" width="100%" />
-            <p>Input</p>
+          <div class="projDescription">
+            <h1>SLIC CUDA</h1>
+            <br />
+            <p>
+              A <strong>superpixel</strong> is a local group of pixels that
+              share similar colors. Segmenting an image into superpixels offers
+              several advantages. Working at the superpixel level, rather than
+              the pixel level, reduces the number of units that need processing.
+              Additionally, superpixels align with object boundaries, making
+              them an excellent tool for object segmentation. However, to be
+              useful as a preprocessing step, a superpixel algorithm needs to be
+              fast. To address this, I implemented a GPU version of the
+              <a
+                href="https://infoscience.epfl.ch/entities/publication/605ab010-dcfa-4dcf-bb55-ddf0eda015ba"
+                >SLIC</a
+              >
+              superpixel segmentation algorithm, which can now run at 24 FPS on
+              a 1920x1080 image using a GTX 970M.
+            </p>
+            <ul class="tool-tag-list">
+              <li class="tool-tag">C++</li>
+              <li class="tool-tag">OpenCV</li>
+              <li class="tool-tag">CUDA</li>
+            </ul>
+            <br />
+            SLIC CUDA is now integrated into the
+            <a href="https://github.com/plstcharles/litiv"
+              >LITIV Computer Vision Framework</a
+            >
+            but you can still find a standalone version at the link below.
+            <div class="buttons-container">
+              <a href="https://github.com/fderue/SLIC_CUDA" class="button">
+                <i class="fab fa-github"></i>
+                <span>source</span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="imageTextBottom">
-            <img src="../images/carWithSlic.jpg" width="100%" />
-            <p>Superpixel Segmentation</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="imageTextBottom">
-            <img src="../images/carWithSlicMean.jpg" width="100%" />
-            <p>Mean RGB</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
         <div class="col-md-8">
           <iframe
             class="vFraming"
             src="https://www.youtube.com/embed/khUTRwaECkg"
           ></iframe>
         </div>
+      </div>
+
+      <div class="row" style="margin-top: 40px">
         <div class="col-md-4">
-          <div class="projDescription">
-            <h3>SLIC CUDA</h3>
-            <br />
-            <p>
-              <u>Description</u> : A superpixel is a local group of pixels
-              sharing similar colors. Segmenting an image in superpixels has
-              many advantages. Instead of working at pixel level, working at
-              superpixel level reduces the number of units to process. Secondly,
-              a superpixel fits to object boundaries, which makes it a great
-              tool for object segmentation. However, a superpixel algorithm
-              should be fast to be worth considering as preprocessing.
-              Therefore, I implemented a GPU version of SLIC (<i
-                >SLIC Superpixels Compared to State-of-the-art Superpixel
-                Methods</i
-              >, Achantal et al. , 2011), which is able to run at 24 FPS on a
-              1920x1080 image with a GTX 970M.
-              <br />
-              <u>Tools</u> : C++, OpenCV and CUDA.
-              <br />
-              <u>Source code</u> : SLIC CUDA is now integrated into the
-              <a href="https://github.com/plstcharles/litiv"
-                >LITIV Computer Vision Framework</a
-              >
-              but you can still find a standalone version
-              <a href="https://github.com/fderue/SLIC_CUDA">here</a>.
-            </p>
-          </div>
+          <figure>
+            <img src="../images/car1080p.jpg" width="100%" />
+            <figcaption>Input</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="imageTextBottom">
+            <img src="../images/carWithSlic.jpg" width="100%" />
+            <figcaption>Superpixel Segmentation</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure>
+            <img src="../images/carWithSlicMean.jpg" width="100%" />
+            <figcaption>Mean RGB</figcaption>
+          </figure>
         </div>
       </div>
     </div>

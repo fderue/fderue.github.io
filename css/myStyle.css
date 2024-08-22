@@ -258,3 +258,6 @@ iframe.videoStyle {
   /*transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+figcaption{
+  text-align: center;
+}
