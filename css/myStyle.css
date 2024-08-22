@@ -11,9 +11,8 @@ body {
   font-size: xx-large;
 }
 
-a:hover {
+a{
   text-decoration: none;
-  color: #f4ad42;
 }
 
 .row-elem {
@@ -109,6 +108,7 @@ div.textBox {
   /*padding: 10px;*/
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000000;
+  text-decoration: none;
 }
 
 img.imgBoxShadow {
