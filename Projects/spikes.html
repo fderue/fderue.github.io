@@ -11,6 +11,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link href="../css/myStyle.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/navbar.js"></script>
@@ -24,46 +28,66 @@
       <!-- ===================  Content ================================ -->
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-4">
           <div class="projDescription">
-            <h3>SPiKeS-T</h3>
+            <h1>SPiKeS-T</h1>
             <br />
             <p>
-              <u>Description</u> : SPiKeS-T (<i
-                >SuperPixel-Keypoints Structure Tracker</i
-              >) is a model-free tracker I developed during my master of
-              research. In a video, the target to follow is only defined by a
-              bounding box in the first frame. The goal is to track that target
-              in each frame of the video. The method I proposed is based on
-              superpixels, keypoints and voting strategy. A paper is currently
-              in review but it can already be downloaded
-              <a href="https://arxiv.org/pdf/1610.07238v1.pdf">here</a>.
+              <strong>SPiKeS-T</strong> (SuperPixel-Keypoints Structure Tracker)
+              is a model-free tracking algorithm that I developed during my
+              Master's research at Polytechnique Montreal. In this approach, the
+              target to be tracked is initially defined by a bounding box in the
+              first frame of the video. The objective is to continuously track
+              this target across all subsequent frames. My proposed method
+              utilizes superpixels, keypoints, and a voting strategy to achieve
+              accurate tracking. This work has been published in
+              <a
+                href="https://link.springer.com/article/10.1007/s00138-017-0884-9"
+                style="text-decoration: none"
+                >Machine Vision and Applications</a
+              >.
             </p>
-            <p><u>Context</u> : Master's project at Polytechnique Montreal.</p>
-            <p><u>Tools</u> : C++, OpenCV and CUDA.</p>
-            <p>
-              <u>Source code</u> :
-              <a href="https://github.com/fderue/SPIKES"
-                >https://github.com/fderue/SPIKES</a
-              >
-            </p>
+            <ul class="tool-tag-list">
+              <li class="tool-tag">C++</li>
+              <li class="tool-tag">OpenCV</li>
+              <li class="tool-tag">CUDA</li>
+            </ul>
+            <div class="buttons-container">
+              <a href="https://arxiv.org/pdf/1610.07238v1.pdf" class="button">
+                <i class="fa-solid fa-file"></i>
+                <span>PDF</span>
+              </a>
+
+              <a href="https://github.com/fderue/SPIKES" class="button">
+                <i class="fab fa-github"></i>
+                <span>source</span>
+              </a>
+            </div>
           </div>
+        </div>
+        <div class="col-md-8">
+          <video width="100%" controls>
+            <source
+              src="https://www.dropbox.com/s/7vjj4j8n4tdp9yf/compoTrackingWithSpikes.mp4?raw=1"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </div>
-      <br />
-      <div class="row">
-        <div class="col-md-4">
-          <div>
-            <img
-              class="spikesImage center-block"
-              src="https://www.dropbox.com/s/eubw2ptyvlj8ic8/spikes.PNG?raw=1"
-              align="middle"
-            />
-          </div>
-        </div>
+      <h2
+        style="
+          text-align: center;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          background-color: rgb(248, 244, 244);
+        "
+      >
+        Methodology
+      </h2>
+      <div class="row methodology-elem">
         <div class="col-md-4">
           <div class="captionVideoSide">
-            <h3>Spikes</h3>
+            <h3>Model Representation</h3>
             <p>
               The target is represented by a Spikes-based model. A Spikes is a
               modified superpixel linked with surrounding keypoints to result in
@@ -71,12 +95,20 @@
             </p>
           </div>
         </div>
+        <div class="col-md-4">
+          <div>
+            <img
+              class="spikesImage center-block"
+              src="https://www.dropbox.com/s/eubw2ptyvlj8ic8/spikes.PNG?raw=1"
+            />
+          </div>
+        </div>
       </div>
-      <div class="row">
+      <div class="row methodology-elem">
         <div class="col-md-9">
-          <video width="800" controls>
+          <video width="100%" controls>
             <source
-              src="https://www.dropbox.com/s/53igknmjuujpbyv/matching.mp4?raw=1"
+              src="https://www.dropbox.com/scl/fi/nfhx0o172htizff7zqfom/matchSpikes.mp4?rlkey=whs3f7fycculgilale1pnjeg4&raw=1"
               type="video/mp4"
             />
           </video>
@@ -91,15 +123,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <video controls>
-            <source
-              src="https://www.dropbox.com/s/oroviet7sdjiio4/occTrack.mp4?raw=1"
-              type="video/mp4"
-            />
-          </video>
-        </div>
+      <div class="row methodology-elem">
         <div class="col-md-4">
           <div class="captionVideoSide">
             <h3>Votes</h3>
@@ -108,22 +132,13 @@
             still vote to locate the target.
           </div>
         </div>
-        <div class="col-md-4"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-9">
-          <video width="800" controls>
+        <div class="col-md-4">
+          <video width="100%" controls>
             <source
-              src="https://www.dropbox.com/s/7vjj4j8n4tdp9yf/compoTrackingWithSpikes.mp4?raw=1"
+              src="https://www.dropbox.com/s/oroviet7sdjiio4/occTrack.mp4?raw=1"
               type="video/mp4"
             />
           </video>
-        </div>
-        <div class="col-md-3">
-          <div class="captionVideoSide">
-            <h3>Tracking Results</h3>
-            Our tracker is able to handle deformable and occluded objects.
-          </div>
         </div>
       </div>
     </div>
