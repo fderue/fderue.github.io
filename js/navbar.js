@@ -13,4 +13,17 @@ fetch("../navbar.html")
         link.classList.add("active");
       }
     });
+
+    // Allow clicking on dropdown parent link
+    document
+      .querySelectorAll(".navbar .dropdown-toggle")
+      .forEach(function (dropdown) {
+        dropdown.addEventListener("click", function (e) {
+          if (window.innerWidth >= 992) {
+            // Ensure this only applies on larger screens (desktop)
+            e.stopPropagation(); // Stop the click from triggering the dropdown
+            window.location.href = this.getAttribute("href"); // Navigate to the href link
+          }
+        });
+      });
   });

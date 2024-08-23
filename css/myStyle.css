@@ -223,6 +223,21 @@ iframe.videoStyle {
   color: #1c5563;
 }
 
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: Adjust if there's a visual jump */
+}
+
+.navbar .dropdown-menu {
+  min-width: auto; /* Remove Bootstrap's default minimum width */
+  width: auto;     /* Set the width to auto to fit content */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
 /* ----------------------- Tag -------------------------------------- */
 /* Style the list to align tags horizontally */
 .tool-tag-list {

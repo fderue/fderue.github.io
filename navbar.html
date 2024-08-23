@@ -1,7 +1,9 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light">
   <h1>
-    <a class="navbar-brand" id="title-main" href="/index.html">François-Xavier Derue</a>
+    <a class="navbar-brand" id="title-main" href="/index.html"
+      >François-Xavier Derue</a
+    >
   </h1>
 
   <!-- Toggler/collapsing Button for mobile view -->
@@ -26,8 +28,24 @@
       <li class="nav-item">
         <a class="nav-link" href="/projectsPage.html">Projects</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/photographyPage.html">Photography</a>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="/photographyPage.html"
+          id="photography-dropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Photography
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="photography-dropdown">
+          <li><a class="dropdown-item" href="#">Landscape</a></li>
+          <li><a class="dropdown-item" href="#">Portrait</a></li>
+          <li><a class="dropdown-item" href="#">Street</a></li>
+          <li><a class="dropdown-item" href="#">Astro</a></li>
+          <li><a class="dropdown-item" href="#">Music</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/cinemagraphPage.html">Cinemagraph</a>
