@@ -91,7 +91,19 @@ $(document).ready(function() {
 
         afterLoad : function() {
           this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-        }
+        },
+
+        beforeShow: function () {
+          /* Disable right click */
+          $.fancybox.wrap.bind("contextmenu", function (e) {
+          return false;
+          });
+          /* Disable drag */
+          $.fancybox.wrap.bind("dragstart", function (e) {
+          return false;
+          });
+  
+      }
       });
 
 

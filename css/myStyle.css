@@ -11,7 +11,7 @@ body {
   font-size: xx-large;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -60,15 +60,14 @@ a{
   z-index: 2;
 }
 
-#contact-link a{
+#contact-link a {
   color: #1c5563;
   text-decoration: none;
 }
 
-#contact-link a:hover{
+#contact-link a:hover {
   color: #f4ad42;
 }
-
 
 .row-elem .thumbnail-text {
   color: #ffffff;
@@ -124,7 +123,7 @@ iframe.vFraming {
 
 .projDescription {
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
 }
 
@@ -138,9 +137,9 @@ div.imageTextBottom {
   margin-top: 10px;
 }
 
-.methodology-elem{
-margin-top: 30px;
-margin-bottom: 30px;
+.methodology-elem {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 img.spikesImage {
@@ -201,7 +200,7 @@ iframe.videoStyle {
   height: 250px;
 }
 
-.playlist-video-title{
+.playlist-video-title {
   text-align: center;
   background-color: rgb(248, 244, 244);
   background-clip: content-box;
@@ -211,16 +210,16 @@ iframe.videoStyle {
 
 /*  ------------------------ Navigation bar ----------------------- */
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
   color: #f4ad42;
   font-weight: bold;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #f4ad42;
 }
 
-.nav-link{
+.nav-link {
   color: #1c5563;
 }
 
@@ -237,7 +236,7 @@ iframe.videoStyle {
 
 /* Style individual tags */
 .tool-tag {
-  background-color: #1c5563;; /* Background color for the tag */
+  background-color: #1c5563; /* Background color for the tag */
   color: white; /* Text color */
   padding: 5px 10px; /* Padding inside the tag */
   border-radius: 15px; /* Rounded corners */
@@ -248,11 +247,11 @@ iframe.videoStyle {
 }
 
 /* ------------------------- Buttons ------------------------------------- */
-.buttons-container{
+.buttons-container {
   margin-top: 10px;
 }
 
-.buttons-container .button{
+.buttons-container .button {
   display: inline-block; /* Make the link behave like a button */
   padding: 5px 10px; /* Add padding inside the link */
   border-radius: 5px; /* Rounded corners */
@@ -266,6 +265,6 @@ iframe.videoStyle {
   /*transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-figcaption{
+figcaption {
   text-align: center;
 }
