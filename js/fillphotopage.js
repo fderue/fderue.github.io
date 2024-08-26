@@ -60,16 +60,21 @@ const landscapeRefs = [
     url: "https://live.staticflickr.com/4381/36584391564_deda6d83d3_k.jpg",
     photoName: "preportGray",
   },
-];
-
-const portraitRefs = [
   {
-    url: "https://c1.staticflickr.com/1/456/31957884643_bf85d37f2f_k.jpg",
-    photonName: "dog",
+    url: "https://live.staticflickr.com/65535/53942073219_d2ed3307d0_k.jpg",
+    photoName: "Milky way on island",
+  },
+  {
+    url: "https://live.staticflickr.com/65535/53941990098_0a802fd74c_k.jpg",
+    photoName: "Milky Way on Zec Matika FX",
+  },
+  {
+    url: "https://live.staticflickr.com/65535/53941990128_e818dfc67e_k.jpg",
+    photoName: "Milky Way only",
   },
 ];
 
-const streetRefs = [
+const peopleRefs = [
   {
     url: "https://c1.staticflickr.com/9/8234/29396263822_9b7cf1e320_k.jpg",
     photoName: "bikeFast",
@@ -88,26 +93,17 @@ const streetRefs = [
   },
 ];
 
-const astroRefs = [
+const streetRefs = [
   {
-    url: "https://live.staticflickr.com/65535/53942073219_d2ed3307d0_k.jpg",
-    photoName: "Milky way on island",
-  },
-  {
-    url: "https://live.staticflickr.com/65535/53941990098_0a802fd74c_k.jpg",
-    photoName: "Milky Way on Zec Matika FX",
-  },
-  {
-    url: "https://live.staticflickr.com/65535/53941990128_e818dfc67e_k.jpg",
-    photoName: "Milky Way only",
+    url: "https://c1.staticflickr.com/1/456/31957884643_bf85d37f2f_k.jpg",
+    photonName: "dog",
   },
 ];
 
 const categoryToRefMap = {
   landscape: landscapeRefs,
-  portrait: portraitRefs,
+  people: peopleRefs,
   street: streetRefs,
-  astro: astroRefs,
 };
 
 function getQueryParam(param) {
