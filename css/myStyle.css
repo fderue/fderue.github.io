@@ -234,8 +234,19 @@ iframe.videoStyle {
 
 .navbar .dropdown-menu {
   min-width: auto; /* Remove Bootstrap's default minimum width */
-  width: auto;     /* Set the width to auto to fit content */
+  width: auto; /* Set the width to auto to fit content */
   white-space: nowrap; /* Prevent line breaks */
+}
+
+#home-body .home,
+#project-body .projects,
+.project-nav-item .projects,
+#photography-body .photo,
+#phototemplate-body .photo,
+#video-body .video,
+#cinemagraph-body .cinemagraph {
+  color: #f4ad42;
+  font-weight: bold;
 }
 
 /* ----------------------- Tag -------------------------------------- */
