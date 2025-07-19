@@ -37,6 +37,21 @@ a {
   color: #f4ad42;
 }
 
+.image-thumbnail {
+  background-position: center;
+  background-size: cover;
+}
+
+#photography-thumbnail {
+  background-image: url("https://live.staticflickr.com/4381/36584391564_deda6d83d3_k.jpg");
+}
+#cinemagraph-thumbnail {
+  background-image: url("../images/BeerCinemagraphThumbnail.gif");
+}
+#video-thumbnail {
+  background-image: url("../images/videoTabThumbnail.jpg");
+}
+
 /*Navigation bar style*/
 .navbar-default {
   background-color: transparent;
@@ -141,7 +156,7 @@ div.imageTextBottom {
 .methodology-elem {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif ;
+  font-family: "Roboto", sans-serif;
 }
 
 img.spikesImage {
