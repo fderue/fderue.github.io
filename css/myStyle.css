@@ -112,16 +112,15 @@ a {
 
 div.polaroid {
   width: 100%;
-  height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
 div.textBox {
   /*padding: 10px;*/
+  margin: 1em;
   font-family: "Roboto", sans-serif;
   color: #333;
   text-decoration: none;
@@ -129,7 +128,8 @@ div.textBox {
 
 img.imgBoxShadow {
   width: 100%;
-  height: 250px;
+  height: 300px;
+  object-fit: contain;
 }
 
 iframe.vFraming {
